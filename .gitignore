@@ -1,0 +1,94 @@
+# ========================================
+# PRODUCTION-READY GITIGNORE
+# ========================================
+
+# Dependencies - NEVER commit node_modules
+node_modules/
+.npm
+.pnpm-store
+
+# Build outputs - rebuild on deploy
+dist/
+build/
+out/
+.next/
+.nuxt/
+coverage/
+
+# Environment variables - NEVER commit secrets!
+.env
+.env.local
+.env.*.local
+.env.production
+.env.*.production
+.env.development
+.env.test
+
+# IDE and Editor - personal preferences
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.classpath
+.c9/
+*.sublime-workspace
+*.sublime-project
+
+# OS specific files
+Thumbs.db
+.DS_Store
+*.bak
+*.tmp
+
+# Logs and debug files
+logs/
+*.log
+npm-debug.log*
+npm-error.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log
+
+# Cache and temporary
+.cache/
+.eslintcache
+.stylelintcache
+.turbo/
+dist-ssr/
+*.local
+
+# Build artifacts
+server/public
+vite.config.ts.*
+*.tar.gz
+
+# Testing
+.nyc_output
+.mocha_artifacts
+*.lcov
+
+# IDE temp files
+*.swp
+*.swo
+.vimrc
+.editorconfig.local
+
+# Vercel build cache (if deployed)
+.vercel/
+.vercelignore
+
+# macOS specific
+.AppleDouble
+.LSOverride
+._*
+
+# Windows specific
+desktop.ini
+
+# Linux specific
+.directory
